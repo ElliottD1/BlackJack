@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace blackjack
@@ -37,6 +37,12 @@ namespace blackjack
                 {
                     Console.WriteLine(comp);
                     Console.WriteLine("You win");
+                    Main(null);
+                }
+                else if (user ==comp&& user<22)
+                {
+                    Console.WriteLine(comp);
+                    Console.WriteLine("Draw");
                     Main(null);
                 }
             }
